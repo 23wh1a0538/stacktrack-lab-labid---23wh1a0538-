@@ -1,12 +1,10 @@
-import React from 'react';
-import Home from './pages/Home';
+import React from "react";
+import Tasks from "./Tasks";
 
 function App() {
   return (
     <div>
-      <Home />
-
-      {/* TODO: Replace this placeholder with Routes */}
+      <Tasks />
     </div>
   );
 }
