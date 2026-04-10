@@ -1,11 +1,15 @@
 import React from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Tasks from "./Tasks";
 
 function App() {
   return (
-    <div>
-      <Tasks />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigate to="/tasks" />} />
+        <Route path="/tasks" element={<Tasks />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
